@@ -5,10 +5,11 @@ abstract class Database {
     abstract void update();
     abstract void delete();
 
-    int number1;
+    String dbName;
 
     void subMenu()
     {
+        System.out.println("---------- "+dbName+" ------------");
         System.out.println("(1) Add");
         System.out.println("(2) Update");
         System.out.println("(3) Delete");

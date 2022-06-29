@@ -4,13 +4,19 @@ public class Main {
 
     public static void main(String [] args)
     {
-        Database MongoDB = new MongoDB();
-        Database SQL = new SQL();
-        Database FireBase = new FireBase();
 
-        System.out.println("(1) Mongo");
-        System.out.println("(2) SQL");
-        System.out.println("(3) FireBase");
+        String mongo = "Mongo";
+        String sQl = "SQL";
+        String fireBase = "FireBase";
+
+
+        Database MongoDB = new MongoDB(mongo);
+        Database SQL = new SQL(sQl);
+        Database FireBase = new FireBase(fireBase);
+
+        System.out.println("(1) "+mongo);
+        System.out.println("(2) "+sQl);
+        System.out.println("(3) "+fireBase);
         System.out.print("Select Pls: ");
         Scanner sc = new Scanner(System.in);
         byte sc1 = sc.nextByte();
